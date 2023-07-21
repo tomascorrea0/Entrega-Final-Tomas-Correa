@@ -1,0 +1,66 @@
+main {
+    height: 100%;
+    section.Titulo-Con-Fondo {
+      display: flex;
+      justify-content: center;
+      height: 120dvh;
+      color: $color-white;
+      text-align: center;
+      font-size: 70px;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/fondoheader.jpg);
+      background-size: cover;
+      background-position: center center;
+      margin: 10px;
+      padding-top: 100px;
+      border-radius: 10px;
+      .titulo-banner{
+        font-size: 70px;
+      }
+    }
+  
+    section {
+      margin: 30px 10px;
+    }
+  
+    #Imagen1ytexto .Contenedor {
+      display: flex;
+      margin-bottom: 20px;
+      // display: grid;
+      // grid-template-columns: repeat(1, 1fr);
+    }
+  
+    div.Descripcion-Imagen {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center center;
+      margin: 0 30px;
+      padding: 60px;
+    }
+  
+    .Contenedor .Imagen-1 img {
+      border-radius: 10px;
+    }
+  
+    #EligeTuEstilo {
+      display: flex;
+      margin: 30px 0 20px;
+    }
+  
+    #EligeTuEstilo .Texto-imagen-2 {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center center;
+      margin: 0 30px;
+      padding: 60px;
+    }
+  
+    #EligeTuEstilo .Imagen2 {
+      height: 600px;
+      width: 400px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+  }

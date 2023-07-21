@@ -1,0 +1,190 @@
+@import 'utilities/mixins';
+@import 'fonts';
+@import 'utilities/variables';
+@import 'generales';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'fonts';
+@import 'views/inicio';
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+  // header {
+  //   flex-direction: column;
+  // }
+
+  nav {
+    padding: 10px 0;
+    font-size: 2px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  section.fondo {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-right: 10px;
+
+    // .texto-imagenes-3 {
+    //   color: black;
+    // }
+  }
+
+  #EligeTuEstilo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #EligeTuEstilo .Imagen2 {
+    height: 100%;
+    width: 98%;
+  }
+
+  #Moda {
+    flex-direction: column;
+    align-items: center;
+
+    .modasection {
+      align-items: center;
+    }
+
+    // .texto-imagenes-3 {
+    //   padding-left: 10px;
+    //   padding-right: 10px;
+    // }
+  }
+}
+// // // // PAGINA ARTE
+/* estilos.scss */
+
+#mainarte {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background-image: url(/img/Fondo.jpg);
+  .h1-arte{
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+    color: rgb(245, 239, 231)
+  }
+  .carrusel{
+    @include flex-center;
+    height: 100vh;
+    .carousel{
+      // display: flex;
+      // height: 600px;
+      width: 80%;
+      max-width: 800px;
+      .carousel-inner{
+        // display: flex;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .galeria {
+    @include flex-center;
+      .caja-galeria {
+          width: 100%;
+          margin: auto;
+          img {
+            border: 3px solid black;
+              width: 90%;
+              border-radius: 10px;
+              transition: transform 2s;
+              &:hover{
+                // width: 95%;
+                // height: 95%;
+                cursor: pointer;
+                transform: scale(1.5)
+              }
+          }
+      }
+  }
+  .link-pexels {
+    text-align: center;
+    flex-direction: column;
+    button {
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: rgb(207, 7, 37);
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        background-color: rgb(252, 41, 71);
+      }
+    }
+  }
+  
+  
+  .columnas {
+      margin: 10px;
+  }
+  .galeria {
+      .caja-galeria {
+          display: grid;
+          column-gap: 1px;
+          padding-right: 10px;
+          column-gap: 10px;
+          row-gap: 15px;
+          @media (min-width: 519px) {
+              grid-template-columns: repeat(2, 50%);
+          }
+          @media (min-width: 520px) {
+              grid-template-columns: repeat(3, 33%);
+          }
+          @media (min-width: 700px) {
+              grid-template-columns: repeat(4, 25%);
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer .caja-footer {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 20px 0px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  section.Titulo-Con-Fondo {
+    background-position: center center;
+  }
+
+  #Imagen1ytexto .Contenedor {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      // padding-right: 10px;
+      border-radius: 20px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+header {
+    a{
+      &:hover {
+        color: $color-hover !important;
+      }
+    }
+      .navbar {
+        @include flex-center;
+        min-height: 70px;
+        background-color: black !important;
+        margin: 10px;
+        margin-top: 0px;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        a {
+          font-size: large;
+          font-weight: 700;
+          padding-right: 10px;
+  
+        }
+  
+        .container-fluid {
+          .stylecode-logo {
+            font-size: 30px;
+          }
+        }
+      }
+    }
