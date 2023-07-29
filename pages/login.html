@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style Code | About Me</title>
-    <meta name="description"content="Descubre quien soy">
-    <meta name="keywords"content="Tomas Correa, estudiante de desarrollo web">
+    <title>Style Code | Login</title>
+    <meta name="description"content="Iniciar Sesion">
+    <meta name="keywords"content="Escribe tu usuario y contraseña">
         <!-- animaciones -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
     <link rel="stylesheet" href="/scss/estilos.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
 </head>
-<body class="body-aboutme">
+<body class="body-login">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img data-aos="flip-left"data-aos-offset="300"
                     data-aos-easing="ease-in-sine" src="../img/sc-blanco.png" alt="Logo SC" width="60" height="40" class="d-inline-block align-text-center"></a>
                     <a class="stylecode-logo" href="../index.html">Style Code</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="./arte.html">Arte</a>
-                    <a class="nav-link" href="./portafolio.html">Portafolio</a>
-                    <a class="nav-link" href="./aboutme.html">About Me</a>
-                    <a class="nav-link" href="./login.html">Login</a>
-                    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="./arte.html">Arte</a>
+                <a class="nav-link" href="./portafolio.html">Portafolio</a>
+                <a class="nav-link" href="./aboutme.html">About Me</a>
+                <a class="nav-link" href="./login.html">Login</a>
                 </div>
-                </div>
-            </nav>
+            </div>
+            </div>
+        </nav>
     </header>
-    <main id="mainabout">
-        <section class="about-section">
-            <div class="about-me">
-                <img src="/img/aboutmeimg.jpg" alt="">
-                <div class="descripcion-personal">
-                    <h1>About Me</h1>
-                    <h2>Estudiante de <span>Desarrollo Web</span></h2>
-                    <p>¡Hola! Mi nombre es Tomas Correa, resido en Argentina y soy un apasionado estudiante de desarrollo web. Me encanta explorar el fascinante mundo de la tecnología y crear experiencias interactivas en la web. A través de mi dedicación y constante aprendizaje, he adquirido habilidades en lenguajes de programación como HTML y CSS. Mi objetivo es convertirme en un desarrollador web altamente capacitado y contribuir al crecimiento de este emocionante campo. Estoy emocionado por seguir aprendiendo y enfrentar nuevos desafíos en el apasionante mundo de la programación. ¡Gracias por escucharme!</p>
-                    <button type="button">Contáctame!</button>
-                </div>
+    <main id="main-login">
+        <section class="login">
+            <div class="wrapp">
+                <form action="">
+                    <h1>Iniciar Sesión</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre de Usuario" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Contraseña" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <div class="recordar">
+                        <label><input type="checkbox"> Recuérdame</label>
+                        <a href="">¿Olvidaste tu Contraseña?</a>
+                    </div>
+                    <button type="submit" class="boton-login">Entrar</button>
+                    <div class="registrarse">
+                        <p>¿No tenés una cuenta? <a href="#">Regístrate</a></p>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

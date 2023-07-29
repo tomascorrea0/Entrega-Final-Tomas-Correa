@@ -4,73 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Code | Portafolio</title>
-        <!-- animaciones -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="description"content="Descubre nuevos proyectos">
+    <meta name="keywords"content="Proyectos numero 1, 2 y 3">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/scss/estilos.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img data-aos="flip-left"data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" src="../img/sc-blanco.png" alt="Logo SC" width="60" height="40" class="d-inline-block align-text-center"></a>
-                    <a class="stylecode-logo" href="./index.html">Style Code</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="./arte.html">Arte</a>
-                    <a class="nav-link" href="./moda.html">Moda</a>
-                    <a class="nav-link" href="./portafolio.html">Portafolio</a>
-                    <a class="nav-link" href="./aboutme.html">About Me</a>
-                    </div>
-                </div>
-                </div>
-            </nav>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-      <footer class="footer">
-        <div class="caja-footer">
-            <div class="boxes">
-                <figure>
-                    <a href="#">
-                        <img src="../img/sc-blanco.png" alt="Logo SC">
-                    </a>
-                </figure>
-            </div>
-            <div class="caja-footer">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, minima?</p>
-            </div>
-            <div class="caja-footer">
-                <h2>Redes</h2>
-                <div class="REDES">
-                    <a href="https://www.instagram.com/tomascorrea0/" target="_blank">Instagram</a>
-                    <a href="https://www.facebook.com/ "target="_blank">Facebook</a>
-                    <a href="https://web.whatsapp.com/" target="_blank">Whathsapp</a>
-                </div>
+<body class="body-proyectos">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img data-aos="flip-left"data-aos-offset="300"
+                data-aos-easing="ease-in-sine" src="../img/sc-blanco.png" alt="Logo SC" width="60" height="40" class="d-inline-block align-text-center"></a>
+                <a class="stylecode-logo" href="./index.html">Style Code</a>
+                <!-- Style Code -->
+                <!-- <h1 class="stylecode-logo">Style Code</h1> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="./arte.html">Arte</a>
+            <a class="nav-link" href="./portafolio.html">Portafolio</a>
+            <a class="nav-link" href="./aboutme.html">About Me</a>
+            <a class="nav-link" href="./login.html">Login</a>
             </div>
         </div>
-        <!-- <div>
-             <a href="./Index.html"><h3>Style Code</h3></a>
-            <nav> fotter ig facebook whatsapp"
+        </div>
+    </nav>
+</header>
+<main class="main-portafolio">
+    <section class="proyectos">
+        <h1>Proyectos</h1>
+    </section>
+    <section class="row d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/portafolioimg.jpg" class="card-img-top" alt="proyecto">
+            <div class="card-body">
+            <h2 class="card-title d-flex justify-content-center align-items-center">Proyecto 1</h2>
+            <p class="card-text text-center">Ejemplo de texto en el cual se describe el proyecto brevemente. Para saber mas presiona en +Info.</p>
+            <a href="https://www.instagram.com/tomascorrea0/" class="btn btn btn-dark d-flex justify-content-center align-items-center">+Info</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/portafolioimg.jpg" class="card-img-top" alt="proyecto">
+            <div class="card-body">
+            <h2 class="card-title d-flex justify-content-center align-items-center">Proyecto 2</h2>
+            <p class="card-text text-center">Ejemplo de texto en el cual se describe el proyecto brevemente. Para saber mas presiona en +Info.</p>
+            <a href="https://www.instagram.com/tomascorrea0/" class="btn btn-dark d-flex justify-content-center align-items-center">+Info</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/portafolioimg.jpg" class="card-img-top" alt="proyecto">
+            <div class="card-body">
+            <h2 class="card-title d-flex justify-content-center align-items-center">Proyecto 3</h2>
+            <p class="card-text text-center">Ejemplo de texto en el cual se describe el proyecto brevemente. Para saber mas presiona en +Info.</p>
+            <a href="https://www.instagram.com/tomascorrea0/" target="_blank" class="btn btn btn-dark d-flex justify-content-center align-items-center">+Info</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="caja-footer">
+        <div class="boxes">
+            <figure>
+                <a href="#">
+                    <img src="../img/sc-blanco.png" alt="Logo SC">
+                </a>
+            </figure>
+        </div>
+        <div class="caja-footer">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, minima?</p>
+        </div>
+        <div class="caja-footer">
+            <h2>Redes</h2>
+            <div class="REDES">
                 <a href="https://www.instagram.com/tomascorrea0/" target="_blank">Instagram</a>
-                <a href="">Facebook</a>
-                <a href="">Whatsapp</a>
-            </nav>
-        </div> -->
-    </footer>
-    </footer>
+                <a href="https://www.facebook.com/ "target="_blank">Facebook</a>
+                <a href="https://web.whatsapp.com/" target="_blank">Whathsapp</a>
+            </div>
+        </div>
+    </div>
+</footer>
     <!-- animaciones -->
     <script>
         AOS.init();

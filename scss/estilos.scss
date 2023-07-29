@@ -31,10 +31,6 @@
     background-color: whitesmoke;
     border-radius: 10px;
     margin-right: 10px;
-
-    // .texto-imagenes-3 {
-    //   color: black;
-    // }
   }
 
   #EligeTuEstilo {
@@ -54,16 +50,13 @@
     .modasection {
       align-items: center;
     }
-
-    // .texto-imagenes-3 {
-    //   padding-left: 10px;
-    //   padding-right: 10px;
-    // }
   }
 }
 // // // // PAGINA ARTE
-/* estilos.scss */
 
+#bodyarte{
+  background: radial-gradient(grey, whitesmoke);
+}
 #mainarte {
   display: flex;
   flex-direction: column;
@@ -73,17 +66,17 @@
   margin-left: 10px;
   border-radius: 10px;
   height: 100%;
-  background-image: url(/img/Fondo.jpg);
+  background: transparent;
   .h1-arte{
-    color: $color-white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   p{
-    color: rgb(245, 239, 231)
+    color: black;
+    margin-top: 10px
   }
   .carrusel{
     @include flex-center;
@@ -111,12 +104,12 @@
             border: 3px solid black;
               width: 90%;
               border-radius: 10px;
-              transition: transform 2s;
+              transition: scale 400ms;
               &:hover{
                 // width: 95%;
                 // height: 95%;
                 cursor: pointer;
-                transform: scale(1.5)
+                scale: 120%;
               }
           }
       }
@@ -171,20 +164,233 @@
     margin-left: 10px;
     padding: 10px;
   }
-
   section.Titulo-Con-Fondo {
     background-position: center center;
   }
-
   #Imagen1ytexto .Contenedor {
     display: flex;
     flex-direction: column;
-
     img {
       max-width: 100%;
       height: auto;
       // padding-right: 10px;
       border-radius: 20px;
+    }
+  }
+}
+//PORTAFOLIO
+  .body-proyectos{
+    background: radial-gradient(grey, whitesmoke);
+    .main-portafolio {
+      overflow-x: hidden;
+      .proyectos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .row {
+          padding: 10px;
+          margin: 10px;
+          .card {
+            width: 18rem;
+            h2 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .card-text {
+              text-align: center;
+            }
+            .btn {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+//ABOUT ME
+.body-aboutme {
+  background: #191919;
+}
+#mainabout {
+  background: transparent;
+}
+.about-section {
+  width: 100%;
+  padding: 80px 0px;
+  border-radius: 10px;
+
+  img {
+    height: auto;
+    width: 420px;
+    border-radius: 10px;
+  }
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .descripcion-personal {
+      width: 500px;
+      h1 {
+        color: $secondary-color;
+        font-size: 80px;
+        text-transform: capitalize;
+        margin: 10px;
+      }
+      h2 {
+        color: $secondary-color;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin: 10px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        span {
+          color: $primary-color;
+        }
+      }
+      p {
+        color: $secondary-color !important;
+        letter-spacing: 1px;
+        line-height: 30px;
+      }
+      button {
+        color: $secondary-color;
+        background: $primary-color;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.4s;
+        &:hover {
+          background: transparent;
+          border: 2px solid $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .about-section {
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .about-me {
+      flex-direction: column;
+      .descripcion-personal {
+        width: 80%;
+        h1 {
+          font-size: 60px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+//LOGIN
+// Estilos para pantallas más grandes
+#main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.wrapp {
+  border-radius: 10px;
+  width: 420px;
+  padding: 30px 40px;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: rgb(245, 239, 231);
+  h1 {
+    text-align: center;
+  }
+  .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    input {
+      padding: 20px 30px 20px 20px;
+      color: rgb(245, 239, 231);
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      outline: none;
+      border: none;
+      border: 2px solid rgb(245, 239, 231);
+      border-radius: 40px;
+      &::placeholder {
+        color: rgb(245, 239, 231);
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  .recordar {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    label {
+      input {
+        accent-color: rgb(245, 239, 231);
+        margin: 3px;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .boton-login {
+    border-radius: 40px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: rgb(245, 239, 231);
+  }
+  .registrarse {
+    text-align: center;
+    margin: 20px 0 15px;
+    p {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    width: 90%;
+    .input-box input {
+      padding: 15px 25px;
+    }
+    .boton-login {
+      height: 35px;
+      font-size: 14px;
+    }
+    .registrarse p {
+      font-size: 14px;
     }
   }
 }

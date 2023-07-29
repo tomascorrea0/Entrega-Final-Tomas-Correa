@@ -5,7 +5,6 @@ body {
 }
 body p {
   font-size: 18px;
-  color: black;
 }
 body h1 {
   font-weight: bold;
@@ -89,6 +88,7 @@ header .navbar .container-fluid .stylecode-logo {
 }
 
 main {
+  background: radial-gradient(grey, whitesmoke);
   height: 100%;
 }
 main section.Titulo-Con-Fondo {
@@ -174,7 +174,10 @@ main #EligeTuEstilo .Imagen2 {
     align-items: center;
   }
 }
-/* estilos.scss */
+#bodyarte {
+  background: radial-gradient(grey, whitesmoke);
+}
+
 #mainarte {
   display: flex;
   flex-direction: column;
@@ -184,17 +187,18 @@ main #EligeTuEstilo .Imagen2 {
   margin-left: 10px;
   border-radius: 10px;
   height: 100%;
-  background-image: url(/img/Fondo.jpg);
+  background: transparent;
 }
 #mainarte .h1-arte {
-  color: rgb(245, 239, 231);
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #mainarte p {
-  color: rgb(245, 239, 231);
+  color: black;
+  margin-top: 10px;
 }
 #mainarte .carrusel {
   display: flex;
@@ -224,11 +228,11 @@ main #EligeTuEstilo .Imagen2 {
   border: 3px solid black;
   width: 90%;
   border-radius: 10px;
-  transition: transform 2s;
+  transition: scale 400ms;
 }
 #mainarte .galeria .caja-galeria img:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  scale: 120%;
 }
 #mainarte .link-pexels {
   text-align: center;
@@ -294,5 +298,220 @@ main #EligeTuEstilo .Imagen2 {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+  }
+}
+.body-proyectos {
+  background: radial-gradient(grey, whitesmoke);
+}
+.body-proyectos .main-portafolio {
+  overflow-x: hidden;
+}
+.body-proyectos .main-portafolio .proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.body-proyectos .main-portafolio .proyectos h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-proyectos .main-portafolio .proyectos .row {
+  padding: 10px;
+  margin: 10px;
+}
+.body-proyectos .main-portafolio .proyectos .row .card {
+  width: 18rem;
+}
+.body-proyectos .main-portafolio .proyectos .row .card h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-proyectos .main-portafolio .proyectos .row .card .card-text {
+  text-align: center;
+}
+.body-proyectos .main-portafolio .proyectos .row .card .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-aboutme {
+  background: #191919;
+}
+
+#mainabout {
+  background: transparent;
+}
+
+.about-section {
+  width: 100%;
+  padding: 80px 0px;
+  border-radius: 10px;
+}
+.about-section img {
+  height: auto;
+  width: 420px;
+  border-radius: 10px;
+}
+.about-section .about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-section .about-me .descripcion-personal {
+  width: 500px;
+}
+.about-section .about-me .descripcion-personal h1 {
+  color: rgb(245, 239, 231);
+  font-size: 80px;
+  text-transform: capitalize;
+  margin: 10px;
+}
+.about-section .about-me .descripcion-personal h2 {
+  color: rgb(245, 239, 231);
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.about-section .about-me .descripcion-personal h2 span {
+  color: rgb(252, 41, 71);
+}
+.about-section .about-me .descripcion-personal p {
+  color: rgb(245, 239, 231) !important;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.about-section .about-me .descripcion-personal button {
+  color: rgb(245, 239, 231);
+  background: rgb(252, 41, 71);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.about-section .about-me .descripcion-personal button:hover {
+  background: transparent;
+  border: 2px solid rgb(252, 41, 71);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .about-section img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-section .about-me {
+    flex-direction: column;
+  }
+  .about-section .about-me .descripcion-personal {
+    width: 80%;
+  }
+  .about-section .about-me .descripcion-personal h1 {
+    font-size: 60px;
+  }
+  .about-section .about-me .descripcion-personal h2 {
+    font-size: 20px;
+  }
+}
+#main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapp {
+  border-radius: 10px;
+  width: 420px;
+  padding: 30px 40px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgb(245, 239, 231);
+}
+.wrapp h1 {
+  text-align: center;
+}
+.wrapp .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.wrapp .input-box input {
+  padding: 20px 30px 20px 20px;
+  color: rgb(245, 239, 231);
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 2px solid rgb(245, 239, 231);
+  border-radius: 40px;
+}
+.wrapp .input-box input::-moz-placeholder {
+  color: rgb(245, 239, 231);
+}
+.wrapp .input-box input::placeholder {
+  color: rgb(245, 239, 231);
+}
+.wrapp .input-box i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.wrapp .recordar {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+}
+.wrapp .recordar label input {
+  accent-color: rgb(245, 239, 231);
+  margin: 3px;
+}
+.wrapp .recordar a:hover {
+  text-decoration: underline;
+}
+.wrapp .boton-login {
+  border-radius: 40px;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: rgb(245, 239, 231);
+}
+.wrapp .registrarse {
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.wrapp .registrarse p a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 700px) {
+  .wrapp {
+    width: 90%;
+  }
+  .wrapp .input-box input {
+    padding: 15px 25px;
+  }
+  .wrapp .boton-login {
+    height: 35px;
+    font-size: 14px;
+  }
+  .wrapp .registrarse p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=estilos.css.map */
