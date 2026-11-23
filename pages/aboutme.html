@@ -4,80 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Code | About Me</title>
-    <meta name="description"content="Descubre quien soy">
-    <meta name="keywords"content="Tomas Correa, estudiante de desarrollo web">
-        <!-- animaciones -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="description" content="Conoce a Tomás Correa, estudiante de desarrollo web.">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../scss/estilos.css">
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
-<body class="body-aboutme">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="pagina-about">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img data-aos="flip-left"data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" src="../img/sc-blanco.png" alt="Logo SC" width="60" height="40" class="d-inline-block align-text-center"></a>
-                    <a class="stylecode-logo" href="../index.html">Style Code</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand marca" href="../index.html">
+                    <img src="../img/sc-blanco.png" alt="" width="57" height="40">
+                    <span>Style Code</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="menu">
                     <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="./arte.html">Arte</a>
-                    <a class="nav-link" href="./portafolio.html">Portafolio</a>
-                    <a class="nav-link" href="./aboutme.html">About Me</a>
-                    <a class="nav-link" href="./login.html">Login</a>
+                    <a class="nav-link" href="arte.html">Arte</a>
+                    <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    <a class="nav-link active" aria-current="page" href="aboutme.html">About Me</a>
+                    <a class="nav-link" href="login.html">Login</a>
                     </div>
                 </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
     </header>
-    <main id="mainabout">
-        <section class="about-section">
-            <div class="about-me">
-                <img src="../img/aboutmeimg.jpg" alt="">
-                <div class="descripcion-personal">
-                    <h1>About Me</h1>
-                    <h2>Estudiante de <span>Desarrollo Web</span></h2>
-                    <p>¡Hola! Mi nombre es Tomas Correa, resido en Argentina y soy un apasionado estudiante de desarrollo web. Me encanta explorar el fascinante mundo de la tecnología y crear experiencias interactivas en la web. A través de mi dedicación y constante aprendizaje, he adquirido habilidades en lenguajes de programación como HTML y CSS. Mi objetivo es convertirme en un desarrollador web altamente capacitado y contribuir al crecimiento de este emocionante campo. Estoy emocionado por seguir aprendiendo y enfrentar nuevos desafíos en el apasionante mundo de la programación. ¡Gracias por escucharme!</p>
-                    <button type="button">Contáctame!</button>
-                </div>
+
+    <main class="contenido">
+        <section class="about">
+            <div class="about-foto" data-aos="fade-right">
+                <img src="../img/aboutmeimg.jpg" alt="Foto de Tomás Correa" width="500" height="400">
+            </div>
+            <div class="about-texto" data-aos="fade-left">
+                <h1>About Me</h1>
+                <h2>Estudiante de <span>Desarrollo Web</span></h2>
+                <p>¡Hola! Mi nombre es Tomás Correa, resido en Argentina y soy un apasionado estudiante de desarrollo web. Me encanta explorar el fascinante mundo de la tecnología y crear experiencias interactivas en la web. A través de mi dedicación y constante aprendizaje, he adquirido habilidades en lenguajes como HTML y CSS. Mi objetivo es convertirme en un desarrollador web altamente capacitado y contribuir al crecimiento de este emocionante campo. Estoy emocionado por seguir aprendiendo y enfrentar nuevos desafíos en el apasionante mundo de la programación. ¡Gracias por leerme!</p>
+                <a class="btn-sc btn-pill" href="https://www.instagram.com/tomascorrea0/" target="_blank" rel="noopener">¡Contáctame!</a>
             </div>
         </section>
     </main>
+
     <footer class="footer">
-        <div class="caja-footer">
-            <div class="boxes">
-                <figure>
-                    <a href="#">
-                        <img src="../img/sc-blanco.png" alt="Logo SC">
-                    </a>
-                </figure>
+        <div class="footer-grid">
+            <div class="footer-col footer-logo">
+                <a href="../index.html" aria-label="Volver al inicio">
+                    <img src="../img/sc-blanco.png" alt="Logo Style Code" width="170" height="120">
+                </a>
             </div>
-            <div class="caja-footer">
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, minima?</p>
+            <div class="footer-col">
+                <h2>Sobre el proyecto</h2>
+                <p>Style Code es un proyecto del curso de Desarrollo Web de Coderhouse: moda, arte y fotografía en un solo lugar.</p>
             </div>
-            <div class="caja-footer">
+            <div class="footer-col">
                 <h2>Redes</h2>
-                <div class="REDES">
-                    <a href="https://www.instagram.com/tomascorrea0/" target="_blank">Instagram</a>
-                    <a href="https://www.facebook.com/ "target="_blank">Facebook</a>
-                    <a href="https://web.whatsapp.com/" target="_blank">Whathsapp</a>
-                </div>
+                <ul class="redes">
+                    <li><a href="https://www.instagram.com/tomascorrea0/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
             </div>
         </div>
+        <p class="footer-copy">&copy; Style Code &middot; Tomás Correa</p>
     </footer>
-    <!-- animaciones -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({ once: true, offset: 80, duration: 700, easing: 'ease-out-cubic' });
     </script>
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
